@@ -115,12 +115,12 @@ int main(){
     while (1)
     {
         printf("Type g if you want to generate a hexa command\n");
-        printf("Type r if you want to read a hexa code, which was sent by the device\n");
+        printf("Type r if you want to use the reading mode\n");
         printf("Type t for timesync\n");
         printf("Press Ctrl + C at any point if you want to exit\n");
         scanf("%c", &command);
         if (command == 'g') commandGen();
-        else if (command == 'r') readData();
+        else if (command == 'r') ReadMode();
         else if (command == 't') genTimesync();
     }
     return 0;
